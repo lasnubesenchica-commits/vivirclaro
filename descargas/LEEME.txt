@@ -1,10 +1,11 @@
-Coloca aquí los dos archivos del ebook con EXACTAMENTE estos nombres:
+Archivos del ebook publicados en esta carpeta:
 
-  vivir-claro.pdf    -> versión para laptop/escritorio
-  vivir-claro.epub   -> versión para móvil / e-reader
+  Vivir_Claro.epub   -> versión para móvil / tablet / e-reader
+  Vivir_Claro.pdf    -> versión para laptop / escritorio
 
-Los botones de descarga en index.html ya apuntan a:
-  descargas/vivir-claro.pdf
-  descargas/vivir-claro.epub
+Los botones de descarga en index.html (sección id="descargar") apuntan a:
+  descargas/Vivir_Claro.epub
+  descargas/Vivir_Claro.pdf
 
-Si usas otros nombres, edita los atributos href en index.html (sección id="descargar").
+Si cambias los nombres de los archivos, actualiza también los atributos
+href de esos botones en index.html para que las descargas no se rompan.

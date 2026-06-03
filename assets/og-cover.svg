@@ -1,17 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#557a5d"/><stop offset="1" stop-color="#2b3a33"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.8" cy="0.2" r="0.6">
-      <stop offset="0" stop-color="#a9c6c9" stop-opacity="0.35"/><stop offset="1" stop-color="#a9c6c9" stop-opacity="0"/>
-    </radialGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.2" fill="#FFFFFF" fill-opacity="0.10"/>
+    </pattern>
+    <clipPath id="ring"><circle cx="985" cy="315" r="150"/></clipPath>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
-  <circle cx="150" cy="150" r="46" fill="none" stroke="#f4f1ea" stroke-width="5" opacity="0.9"/>
-  <circle cx="150" cy="150" r="20" fill="none" stroke="#f4f1ea" stroke-width="4" opacity="0.6"/>
-  <text x="100" y="330" font-family="Georgia, serif" font-size="100" fill="#f4f1ea" font-weight="600">Vivir Claro</text>
-  <text x="104" y="400" font-family="Georgia, serif" font-size="36" fill="#cfe3d6">Despeja la mente. Vuelve a lo esencial.</text>
-  <text x="104" y="540" font-family="Arial, sans-serif" font-size="26" fill="#a9c6c9" letter-spacing="3">EBOOK GRATUITO  ·  PDF  ·  ePub</text>
+
+  <!-- Fondo teal con textura de puntos -->
+  <rect width="1200" height="630" fill="#1F6F78"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Emblema circular -->
+  <circle cx="985" cy="315" r="158" fill="#15505A"/>
+  <g clip-path="url(#ring)">
+    <rect x="835" y="165" width="300" height="300" fill="#1F6F78"/>
+    <circle cx="1020" cy="270" r="42" fill="#F7CD6E"/>
+    <path d="M835 360c34-20 54-54 88-54s48 38 82 31 60-40 108-31v100H835z" fill="#15505A"/>
+    <path d="M835 395c40-17 60-34 100-34s54 27 94 20 54-27 100-20v80H835z" fill="#0F3E47"/>
+  </g>
+  <circle cx="985" cy="315" r="153" fill="none" stroke="#F4EEE1" stroke-width="10"/>
+
+  <!-- Wordmark + tagline -->
+  <text x="96" y="300" font-family="'Baloo 2', 'Trebuchet MS', sans-serif" font-size="120" font-weight="800" fill="#F7CD6E">Vivir Claro</text>
+  <text x="100" y="372" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="40" fill="#F4EEE1">Herramientas para pensar, sentir y decidir mejor.</text>
+  <text x="100" y="520" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="27" fill="#F7CD6E" letter-spacing="3">LIBRO  ·  EPUB  ·  PDF  ·  vivirclaro.com</text>
 </svg>
