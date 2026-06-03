@@ -12,17 +12,21 @@
 <meta property="og:title" content="Vivir Claro — Herramientas para pensar, sentir y decidir mejor">
 <meta property="og:description" content="Un libro para ver la vida con más claridad y vivirla con intención. Nació de años de conversaciones al atardecer en las montañas de Panamá.">
 <meta property="og:url" content="https://vivirclaro.com/">
-<meta property="og:image" content="https://vivirclaro.com/assets/og-cover.svg">
+<meta property="og:image" content="https://vivirclaro.com/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portada de Vivir Claro, de Josh">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vivir Claro — Herramientas para pensar, sentir y decidir mejor">
 <meta name="twitter:description" content="Un libro para ver la vida con más claridad y vivirla con intención.">
-<meta name="twitter:image" content="https://vivirclaro.com/assets/og-cover.svg">
+<meta name="twitter:image" content="https://vivirclaro.com/assets/og-cover.png">
 <meta name="theme-color" content="#1F6F78">
 <link rel="canonical" href="https://vivirclaro.com/">
 
-<!-- Favicon: emblema circular (teal + anillo crema) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231F6F78'/%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%23F4EEE1' stroke-width='3.5'/%3E%3Cpath d='M22 64c8-2 12-9 18-9s9 6 16 5 14-9 22-7v15H22z' fill='%2315505A'/%3E%3Ccircle cx='66' cy='34' r='10' fill='%23F7CD6E'/%3E%3C/svg%3E">
+<!-- Favicon: emblema circular (foto de la portada) -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,10 +117,14 @@
   .reassure{margin-top:20px;font-size:13.5px;color:var(--c-cream);display:flex;align-items:center;gap:8px;opacity:.9}
   .reassure svg{width:16px;height:16px;color:var(--c-amber)}
 
-  /* hero emblem stage */
+  /* hero — portada del libro */
   .hero-art{display:grid;place-items:center}
-  .emblem-xl{width:min(380px,82vw);height:min(380px,82vw);filter:drop-shadow(var(--shadow-soft));animation:float 7s ease-in-out infinite}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  .book-cover{width:min(340px,78vw);height:auto;border-radius:14px;box-shadow:0 30px 60px -18px rgba(10,30,36,.55), 0 6px 18px rgba(10,30,36,.30);outline:1px solid rgba(255,255,255,.10);transform:rotate(-2.5deg);transition:transform .5s ease;animation:float 7s ease-in-out infinite}
+  .book-cover:hover{transform:rotate(0deg) translateY(-4px)}
+  @keyframes float{0%,100%{transform:rotate(-2.5deg) translateY(0)}50%{transform:rotate(-2.5deg) translateY(-14px)}}
+
+  /* emblema circular (imagen real) */
+  img.emblem{border-radius:50%;object-fit:cover}
 
   /* section base */
   section{padding:84px 0}
@@ -212,7 +220,7 @@
     footer .foot-top{flex-direction:column}
   }
   @media(prefers-reduced-motion:reduce){
-    .emblem-xl{animation:none}
+    .book-cover{animation:none;transform:rotate(-2.5deg)}
     .reveal{transition:none;opacity:1;transform:none}
     html{scroll-behavior:auto}
   }
@@ -226,12 +234,7 @@
 <nav>
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Vivir Claro — inicio">
-      <svg class="emblem" width="38" height="38" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="48" fill="#15505A"/>
-        <circle cx="50" cy="50" r="40" fill="none" stroke="#F4EEE1" stroke-width="3.5"/>
-        <circle cx="66" cy="34" r="9" fill="#F7CD6E"/>
-        <path d="M22 64c8-3 12-9 18-9s9 6 16 5 14-9 22-7v15H22z" fill="#1F6F78"/>
-      </svg>
+      <img class="emblem" src="assets/emblema-circle.png" width="40" height="40" alt="" loading="eager" decoding="async">
       <span class="wordmark">Vivir Claro</span>
     </a>
     <div class="nav-links">
@@ -264,20 +267,9 @@
     </div>
 
     <div class="hero-art">
-      <svg class="emblem-xl" viewBox="0 0 100 100" role="img" aria-label="Emblema de Vivir Claro: un sol que despeja sobre las montañas de Las Nubes">
-        <defs>
-          <clipPath id="ring"><circle cx="50" cy="50" r="44"/></clipPath>
-        </defs>
-        <circle cx="50" cy="50" r="49" fill="#15505A"/>
-        <g clip-path="url(#ring)">
-          <rect x="6" y="6" width="88" height="88" fill="#1F6F78"/>
-          <circle cx="64" cy="36" r="13" fill="#F7CD6E"/>
-          <circle cx="64" cy="36" r="20" fill="none" stroke="#F7CD6E" stroke-opacity="0.35" stroke-width="2"/>
-          <path d="M6 70c10-6 16-16 26-16s14 11 24 9 18-12 32-9v30H6z" fill="#15505A"/>
-          <path d="M6 80c12-5 18-10 30-10s16 8 28 6 16-8 30-6v24H6z" fill="#0F3E47"/>
-        </g>
-        <circle cx="50" cy="50" r="46" fill="none" stroke="#F4EEE1" stroke-width="3.2"/>
-      </svg>
+      <img class="book-cover" src="assets/emblema.png" width="1600" height="2560"
+           alt="Portada del libro Vivir Claro, de Josh: una niña en un columpio mirando las montañas de Las Nubes."
+           loading="eager" decoding="async">
     </div>
   </div>
 </header>
@@ -341,12 +333,7 @@
   <div class="wrap">
     <div class="author">
       <div class="author-card">
-        <svg class="emblem" width="92" height="92" viewBox="0 0 100 100" aria-hidden="true">
-          <circle cx="50" cy="50" r="48" fill="#1F6F78"/>
-          <circle cx="64" cy="36" r="11" fill="#F7CD6E"/>
-          <path d="M14 66c10-5 15-13 24-13s13 9 22 7 16-10 28-8v22H14z" fill="#15505A"/>
-          <circle cx="50" cy="50" r="44" fill="none" stroke="#F4EEE1" stroke-width="3"/>
-        </svg>
+        <img class="emblem" src="assets/emblema-circle.png" width="96" height="96" alt="" loading="lazy" decoding="async">
         <span class="wordmark">Josh</span>
         <p class="place">Creador de Las Nubes · Montañas de Panamá</p>
       </div>
@@ -405,12 +392,7 @@
     <div class="foot-top">
       <div>
         <a class="brand" href="#inicio" aria-label="Vivir Claro — inicio">
-          <svg class="emblem" width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="50" r="48" fill="#15505A"/>
-            <circle cx="50" cy="50" r="40" fill="none" stroke="#F4EEE1" stroke-width="3.5"/>
-            <circle cx="66" cy="34" r="9" fill="#F7CD6E"/>
-            <path d="M22 64c8-3 12-9 18-9s9 6 16 5 14-9 22-7v15H22z" fill="#1F6F78"/>
-          </svg>
+          <img class="emblem" src="assets/emblema-circle.png" width="36" height="36" alt="" loading="lazy" decoding="async">
           <span class="wordmark">Vivir Claro</span>
         </a>
         <p class="foot-tag">Herramientas para pensar, sentir y decidir mejor.</p>
