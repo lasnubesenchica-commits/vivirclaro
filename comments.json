@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "nombre": "María Fernanda",
+    "lugar": "Ciudad de Panamá",
+    "fecha": "Mayo 2026",
+    "comentario": "Lo leí en una tarde y me dejó pensando una semana. No es de los libros que te dicen qué hacer; es de los que te ayudan a ver con más claridad lo que ya sabías."
+  },
+  {
+    "nombre": "Andrés",
+    "lugar": "Medellín, Colombia",
+    "fecha": "Abril 2026",
+    "comentario": "El capítulo sobre habitar el gris me llegó justo cuando lo necesitaba. Lo voy a releer con calma. Gracias por compartirlo, Josh."
+  }
+]
