@@ -186,6 +186,23 @@
   .fmt .fmt-go{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:var(--c-amber)}
   .fmt .fmt-go svg{width:16px;height:16px}
 
+  /* guia "como lo abro" dentro del bloque de descarga */
+  .dl-help{position:relative;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.16)}
+  .dl-help h3{color:var(--c-amber);font-size:1.2rem;margin-bottom:8px}
+  .dl-help .dl-help-sub{color:var(--c-cream);opacity:.85;font-size:.95rem;max-width:60ch;margin:0 auto 26px}
+  .help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px;margin:0 auto;text-align:left}
+  .help-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px 22px}
+  .help-card .h-ico{width:40px;height:40px;border-radius:11px;background:rgba(247,205,110,.18);display:grid;place-items:center;margin-bottom:14px}
+  .help-card .h-ico svg{width:21px;height:21px;color:var(--c-amber)}
+  .help-card h4{color:var(--c-white);font-family:var(--font-display);font-weight:700;font-size:1.02rem;margin-bottom:8px}
+  .help-card ol{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:8px}
+  .help-card ol li{counter-increment:step;position:relative;padding-left:26px;color:var(--c-cream);opacity:.92;font-size:.9rem;line-height:1.5}
+  .help-card ol li::before{content:counter(step);position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:50%;background:var(--c-amber);color:var(--c-ink);font-family:var(--font-sans);font-weight:700;font-size:.72rem;display:grid;place-items:center}
+  .help-card p{color:var(--c-cream);opacity:.92;font-size:.9rem;line-height:1.55}
+  .help-card strong{color:var(--c-white);font-weight:600}
+  .dl-help-note{color:var(--c-cream);opacity:.8;font-size:.86rem;margin-top:22px}
+  .dl-help-note a{color:var(--c-amber)}
+
   /* FAQ */
   .faq{max-width:780px;margin:0 auto}
   details{background:var(--c-cream-50);border:1px solid rgba(26,58,68,.08);border-radius:16px;padding:0 24px;margin-bottom:12px}
@@ -250,6 +267,7 @@
     .author{grid-template-columns:1fr;text-align:center;gap:34px}
     .author-card{max-width:340px;margin:0 auto}
     .download .panel{padding:48px 24px}
+    .help-grid{grid-template-columns:1fr}
     .comments-grid{grid-template-columns:1fr}
     footer .foot-top{flex-direction:column}
   }
@@ -406,6 +424,41 @@
           <span class="fmt-go">Descargar PDF <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6l6 6-6 6"/></svg></span>
         </a>
       </div>
+
+      <div class="dl-help">
+        <h3>¿Cómo lo abro?</h3>
+        <p class="dl-help-sub">Si es tu primera vez con un EPUB, no te preocupes: se abre en un par de toques. Elige tu caso.</p>
+        <div class="help-grid">
+
+          <div class="help-card">
+            <div class="h-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+            <h4>EPUB en iPhone / iPad</h4>
+            <ol>
+              <li>Descarga el <strong>EPUB</strong>.</li>
+              <li>Toca el archivo descargado.</li>
+              <li>Elige <strong>Abrir en Libros</strong> (Apple Books ya viene instalado).</li>
+            </ol>
+          </div>
+
+          <div class="help-card">
+            <div class="h-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H7a2 2 0 01-2-2z"/><path d="M9 4v16"/></svg></div>
+            <h4>EPUB en Android</h4>
+            <ol>
+              <li>Descarga el <strong>EPUB</strong>.</li>
+              <li>Ábrelo con <strong>Play Libros</strong> (preinstalado) o <strong>ReadEra</strong> (gratis, sin anuncios).</li>
+              <li>Toca el archivo → <strong>Abrir con…</strong> y elige la app.</li>
+            </ol>
+          </div>
+
+          <div class="help-card">
+            <div class="h-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+            <h4>PDF (cualquier dispositivo)</h4>
+            <p>Se abre solo, sin instalar nada. En el móvil, desde <strong>Archivos / Files</strong> o tu navegador; en la computadora, con doble clic. Ideal si quieres imprimirlo.</p>
+          </div>
+
+        </div>
+        <p class="dl-help-note">¿Te quedaste con dudas? Mira las <a href="#faq">preguntas frecuentes</a> más abajo.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -467,7 +520,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="reveal">
+<section id="faq" class="reveal">
   <div class="wrap">
     <div class="sec-head"><span class="kicker">Dudas frecuentes</span><h2>Preguntas rápidas</h2></div>
     <div class="faq">
