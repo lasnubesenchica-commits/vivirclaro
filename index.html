@@ -308,9 +308,9 @@
       <p class="tagline">Herramientas para pensar, sentir y decidir mejor.</p>
       <p class="lead">Un libro para ver la vida con más claridad y vivirla con intención.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="leer/">
+        <a class="btn btn-primary" id="cta-read" href="leer/">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-          Lee Vivir Claro
+          <span id="cta-read-label">Lee Vivir Claro</span>
         </a>
         <a class="btn btn-ghost" href="#descargar">Descarga el libro (EPUB · PDF)</a>
       </div>
@@ -632,6 +632,23 @@
         .catch(function(){ show('No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.', 'err'); })
         .finally(function(){ btn.disabled = false; });
     });
+  })();
+
+  // CTA inteligente: si el visitante ya empezó a leer, ofrecer "Continuar leyendo"
+  (function(){
+    try{
+      var raw = localStorage.getItem('vc-last');
+      if(!raw) return;
+      var d = JSON.parse(raw);
+      if(!d || !d.slug || d.pct < 2 || d.pct > 97) return;
+      var a = document.getElementById('cta-read');
+      var l = document.getElementById('cta-read-label');
+      if(a && l){
+        a.href = 'leer/' + d.slug + '.html';
+        l.textContent = 'Continuar leyendo';
+        a.setAttribute('title', 'Continúa en ' + (d.title || 'tu lectura') + ' (~' + d.pct + '%)');
+      }
+    }catch(e){}
   })();
 </script>
 
