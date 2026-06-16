@@ -35,13 +35,28 @@ main blockquote p{font-size:1.1rem;margin-bottom:6px}
 main em{font-style:italic}
 hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
 .meta-line{font-family:'Poppins',sans-serif;color:#2E464E;font-size:.9rem;margin-bottom:26px;opacity:.9}
-.share-block{margin:46px 0 0;padding:30px 0 4px;border-top:1px solid rgba(26,58,68,.15)}
-.share-block h2{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.4rem;color:#1F6F78;margin:0 0 6px}
-.share-intro{font-family:'Poppins',sans-serif;font-size:.95rem;color:#2E464E;margin-bottom:22px}
-.qcard{background:#fff;border:1px solid rgba(26,58,68,.10);border-radius:16px;padding:22px 22px 16px;margin-bottom:16px;box-shadow:0 10px 30px -24px rgba(20,40,60,.5)}
-.qcard blockquote{font-family:'Lora',serif;font-style:italic;font-size:1.12rem;color:#1A3A44;border:none;padding:0;margin:0 0 16px}
-.qshare{display:flex;flex-wrap:wrap;gap:8px}
-.qbtn{font-family:'Poppins',sans-serif;font-size:.82rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;border-radius:999px;padding:8px 14px;display:inline-flex;align-items:center;gap:6px;transition:transform .15s,filter .15s}
+.rd-foot{max-width:680px;margin:0 auto;padding:30px 22px 64px}
+.pager{display:flex;gap:12px;font-family:'Poppins',sans-serif}
+.pager a{flex:1;text-decoration:none;border:1.5px solid rgba(31,111,120,.35);border-radius:14px;padding:14px 16px;color:#1A3A44;background:#fff;transition:border-color .2s,background .2s}
+.pager a:hover{border-color:#1F6F78;background:#fff}
+.pager a.next{text-align:right;background:#1F6F78;border-color:#1F6F78}
+.pager a.next .lbl{color:#CFE3E1}
+.pager a.next .ttl{color:#fff}
+.pager .lbl{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#2E464E;margin-bottom:3px}
+.pager .ttl{font-weight:600;color:#15505A;font-size:.95rem}
+/* compartir: panel plegable, poco invasivo */
+details.share-block{margin:16px 0 0;border:1px solid rgba(26,58,68,.14);border-radius:14px;background:#fff;overflow:hidden}
+details.share-block>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:15px 18px;font-family:'Poppins',sans-serif;font-weight:600;color:#15505A;font-size:.98rem}
+details.share-block>summary::-webkit-details-marker{display:none}
+details.share-block>summary .ic{color:#1F6F78}
+details.share-block>summary .chev{margin-left:auto;color:#1F6F78;transition:transform .2s;font-size:.8rem}
+details.share-block[open]>summary .chev{transform:rotate(180deg)}
+.share-body{padding:2px 16px 16px}
+.share-intro{font-family:'Poppins',sans-serif;font-size:.9rem;color:#2E464E;margin:0 0 14px}
+.qcard{background:#FBF7EF;border:1px solid rgba(26,58,68,.10);border-radius:13px;padding:16px 16px 12px;margin-bottom:12px}
+.qcard blockquote{font-family:'Lora',serif;font-style:italic;font-size:1.04rem;color:#1A3A44;border:none;padding:0;margin:0 0 12px}
+.qshare{display:flex;flex-wrap:wrap;gap:7px}
+.qbtn{font-family:'Poppins',sans-serif;font-size:.76rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;border-radius:999px;padding:7px 12px;display:inline-flex;align-items:center;gap:6px;transition:transform .15s,filter .15s}
 .qbtn:hover{transform:translateY(-1px);filter:brightness(1.05)}
 .qbtn.wa{background:#25D366;color:#06351c}
 .qbtn.fb{background:#1877F2;color:#fff}
@@ -50,23 +65,15 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
 .qbtn.ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff}
 .qbtn.copy{background:#F7CD6E;color:#1A3A44}
 .qbtn.copied{background:#1F6F78 !important;color:#fff !important}
-.rd-foot{max-width:680px;margin:0 auto;padding:6px 22px 64px}
-.pager{display:flex;gap:12px;font-family:'Poppins',sans-serif}
-.pager a{flex:1;text-decoration:none;border:1px solid rgba(26,58,68,.16);border-radius:14px;padding:13px 16px;color:#1A3A44;background:#fff;transition:border-color .2s}
-.pager a:hover{border-color:#1F6F78}
-.pager .lbl{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#2E464E;margin-bottom:3px}
-.pager .ttl{font-weight:600;color:#15505A;font-size:.95rem}
-.pager .next{text-align:right}
-.rd-cta{background:#1F6F78;color:#fff;border-radius:20px;padding:28px;text-align:center;margin:22px 0 0;background-image:radial-gradient(rgba(255,255,255,.08) 2px,transparent 2px);background-size:26px 26px}
-.rd-cta h3{font-family:'Baloo 2',sans-serif;color:#F7CD6E;font-size:1.3rem;margin-bottom:10px}
-.rd-cta p{color:#F4EEE1;font-size:1rem;margin-bottom:16px;font-family:'Poppins',sans-serif}
+.rd-cta{background:#1F6F78;color:#fff;border-radius:20px;padding:26px;text-align:center;margin:18px 0 0;background-image:radial-gradient(rgba(255,255,255,.08) 2px,transparent 2px);background-size:26px 26px}
+.rd-cta h3{font-family:'Baloo 2',sans-serif;color:#F7CD6E;font-size:1.25rem;margin-bottom:8px}
+.rd-cta p{color:#F4EEE1;font-size:.98rem;margin-bottom:15px;font-family:'Poppins',sans-serif}
 .rd-cta a{display:inline-block;background:#F7CD6E;color:#1A3A44;font-family:'Poppins',sans-serif;font-weight:600;text-decoration:none;padding:11px 22px;border-radius:999px;margin:4px}
 .rd-cta a.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
 .resume-pill{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;transition:opacity .3s,transform .3s;z-index:50;display:flex;align-items:center;gap:4px;background:#15505A;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px;box-shadow:0 14px 34px -12px rgba(7,24,28,.6)}
 .resume-pill.show{opacity:1;transform:translate(-50%,0)}
 .resume-pill .rp-go{font-family:'Poppins',sans-serif;font-weight:600;font-size:.9rem;color:#1A3A44;background:#F7CD6E;border:none;border-radius:999px;padding:9px 16px;cursor:pointer}
 .resume-pill .rp-x{background:transparent;border:none;color:#F4EEE1;font-size:.95rem;cursor:pointer;padding:0 10px;opacity:.8}
-.resume-pill .rp-x:hover{opacity:1}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
 </head>
 <body>
@@ -669,19 +676,17 @@ porque lo construimos juntos.</p>
 </section>
 </section>
 </main>
-<div class="rd-foot"><div class="pager"><a href="acto-5-trascender.html"><span class="lbl">Anterior</span><span class="ttl">Acto V — Trascender</span></a><a class="next" href="./"><span class="lbl">Fin</span><span class="ttl">Volver al índice</span></a></div><div class="rd-cta">
-  <h3>¿Lo quieres contigo?</h3>
-  <p>Descarga Vivir Claro gratis y léelo cuando quieras, sin conexión.</p>
-  <a href="../descargas/Vivir_Claro.epub" download>Descargar EPUB</a>
-  <a class="ghost" href="../descargas/Vivir_Claro.pdf" download>Descargar PDF</a>
-</div></div>
+<div class="rd-foot">
+  <nav class="pager" aria-label="Navegación del libro"><a href="acto-5-trascender.html"><span class="lbl">Anterior</span><span class="ttl">Acto V — Trascender</span></a><a class="next" href="./"><span class="lbl">Fin</span><span class="ttl">Volver al índice</span></a></nav>
+  
+  <div class="rd-cta"><h3>¿Lo quieres contigo?</h3><p>Descarga Vivir Claro gratis y léelo cuando quieras, sin conexión.</p><a href="../descargas/Vivir_Claro.epub" download>Descargar EPUB</a><a class="ghost" href="../descargas/Vivir_Claro.pdf" download>Descargar PDF</a></div>
+</div>
 <script>
 (function(){var p=document.getElementById('progress');function maxY(){var h=document.documentElement;return (h.scrollHeight-h.clientHeight)||1;}
 function u(){p.style.width=((window.scrollY||document.documentElement.scrollTop||0)/maxY()*100)+'%';}
 document.addEventListener('scroll',u,{passive:true});u();
 function copyText(t,cb){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(cb).catch(cb);}else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);cb();}}
 document.querySelectorAll('.qbtn.copy,.qbtn.ig').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy');var msg=b.getAttribute('data-msg')||'¡Copiado!';copyText(t,function(){var o=b.textContent;b.textContent=msg;b.classList.add('copied');setTimeout(function(){b.textContent=o;b.classList.remove('copied');},1900);});});});
-/* Continuar leyendo */
 try{var slug=(location.pathname.split('/').pop()||'').replace(/\.html$/,'');
 if(slug&&slug!=='index'){var key='vc-pos-'+slug,title=(document.title||'').split(' \u00b7 ')[0],t=null;
 function save(){var y=window.scrollY||document.documentElement.scrollTop||0;var pct=Math.round(y/maxY()*100);try{localStorage.setItem(key,String(y));localStorage.setItem('vc-last',JSON.stringify({slug:slug,title:title,pct:pct,ts:Date.now()}));}catch(e){}}
