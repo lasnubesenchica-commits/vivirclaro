@@ -23,7 +23,6 @@ body{font-family:'Lora',Georgia,serif;color:#1A3A44;background:#FBF7EF;line-heig
 .rd-nav{position:sticky;top:0;z-index:30;background:rgba(31,111,120,.96);backdrop-filter:blur(8px)}
 .rd-nav .in{max-width:720px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;height:58px;padding:0 20px}
 .rd-nav a{color:#F4EEE1;text-decoration:none;font-family:'Poppins',sans-serif;font-size:.92rem;font-weight:500;display:inline-flex;align-items:center;gap:7px}
-.rd-nav a svg{width:16px;height:16px}
 .rd-nav .brand{color:#F7CD6E;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.05rem}
 .rd-nav .dl{background:#F7CD6E;color:#1A3A44;font-weight:600;padding:7px 15px;border-radius:999px}
 main{max-width:680px;margin:0 auto;padding:46px 22px 10px}
@@ -35,7 +34,20 @@ main blockquote{margin:26px 0;padding:4px 0 4px 22px;border-left:3px solid #F7CD
 main blockquote p{font-size:1.1rem;margin-bottom:6px}
 main em{font-style:italic}
 hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
-.kick{font-family:'Poppins',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#1F6F78;margin-bottom:4px;display:block}
+.meta-line{font-family:'Poppins',sans-serif;color:#2E464E;font-size:.9rem;margin-bottom:26px;opacity:.9}
+.share-block{margin:46px 0 0;padding:30px 0 4px;border-top:1px solid rgba(26,58,68,.15)}
+.share-block h2{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.4rem;color:#1F6F78;margin:0 0 6px}
+.share-intro{font-family:'Poppins',sans-serif;font-size:.95rem;color:#2E464E;margin-bottom:22px}
+.qcard{background:#fff;border:1px solid rgba(26,58,68,.10);border-radius:16px;padding:22px 22px 16px;margin-bottom:16px;box-shadow:0 10px 30px -24px rgba(20,40,60,.5)}
+.qcard blockquote{font-family:'Lora',serif;font-style:italic;font-size:1.12rem;color:#1A3A44;border:none;padding:0;margin:0 0 16px}
+.qshare{display:flex;flex-wrap:wrap;gap:8px}
+.qbtn{font-family:'Poppins',sans-serif;font-size:.82rem;font-weight:600;text-decoration:none;border:none;cursor:pointer;border-radius:999px;padding:8px 14px;display:inline-flex;align-items:center;gap:6px;transition:transform .15s,filter .15s}
+.qbtn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.qbtn.wa{background:#25D366;color:#06351c}
+.qbtn.tg{background:#2AABEE;color:#06283b}
+.qbtn.x{background:#1A3A44;color:#fff}
+.qbtn.copy{background:#F7CD6E;color:#1A3A44}
+.qbtn.copied{background:#1F6F78;color:#fff}
 .rd-foot{max-width:680px;margin:0 auto;padding:6px 22px 64px}
 .rd-cta{background:#1F6F78;color:#fff;border-radius:20px;padding:28px;text-align:center;margin:34px 0 26px;background-image:radial-gradient(rgba(255,255,255,.08) 2px,transparent 2px);background-size:26px 26px}
 .rd-cta h3{font-family:'Baloo 2',sans-serif;color:#F7CD6E;font-size:1.3rem;margin-bottom:10px}
@@ -48,7 +60,6 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
 .pager .lbl{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#2E464E;margin-bottom:3px}
 .pager .ttl{font-weight:600;color:#15505A;font-size:.95rem}
 .pager .next{text-align:right}
-.meta-line{font-family:'Poppins',sans-serif;color:#2E464E;font-size:.9rem;margin-bottom:26px;opacity:.9}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
 </head>
 <body>
@@ -141,6 +152,37 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
 <p>Habítala.</p>
 </section>
 </section>
+<section class="share-block" aria-label="Comparte una idea">
+  <h2>Comparte una idea</h2>
+  <p class="share-intro">Si algo de este acto te resonó, pásalo. Cada idea compartida es una semilla.</p>
+    <figure class="qcard">
+      <blockquote>No te retiras hacia la paz: la construyes mientras avanzas, o no la tendrás cuando llegues.</blockquote>
+      <div class="qshare">
+        <a class="qbtn wa" target="_blank" rel="noopener" href="https://wa.me/?text=%E2%80%9CNo%20te%20retiras%20hacia%20la%20paz%3A%20la%20construyes%20mientras%20avanzas%2C%20o%20no%20la%20tendr%C3%A1s%20cuando%20llegues.%E2%80%9D%20%E2%80%94%20Vivir%20Claro%2C%20de%20Josh.%20L%C3%A9elo%20gratis%3A%20https%3A//vivirclaro.com/leer/acto-5-trascender.html">WhatsApp</a>
+        <a class="qbtn tg" target="_blank" rel="noopener" href="https://t.me/share/url?url=https%3A//vivirclaro.com/leer/acto-5-trascender.html&text=%E2%80%9CNo%20te%20retiras%20hacia%20la%20paz%3A%20la%20construyes%20mientras%20avanzas%2C%20o%20no%20la%20tendr%C3%A1s%20cuando%20llegues.%E2%80%9D%20%E2%80%94%20Vivir%20Claro">Telegram</a>
+        <a class="qbtn x" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=%E2%80%9CNo%20te%20retiras%20hacia%20la%20paz%3A%20la%20construyes%20mientras%20avanzas%2C%20o%20no%20la%20tendr%C3%A1s%20cuando%20llegues.%E2%80%9D%20%E2%80%94%20Vivir%20Claro%2C%20de%20Josh&url=https%3A//vivirclaro.com/leer/acto-5-trascender.html">X</a>
+        <button class="qbtn copy" type="button" data-copy="“No te retiras hacia la paz: la construyes mientras avanzas, o no la tendrás cuando llegues.” — Vivir Claro, de Josh. Léelo gratis: https://vivirclaro.com/leer/acto-5-trascender.html">Copiar</button>
+      </div>
+    </figure>
+    <figure class="qcard">
+      <blockquote>Diseña los días, y el arco se diseña solo.</blockquote>
+      <div class="qshare">
+        <a class="qbtn wa" target="_blank" rel="noopener" href="https://wa.me/?text=%E2%80%9CDise%C3%B1a%20los%20d%C3%ADas%2C%20y%20el%20arco%20se%20dise%C3%B1a%20solo.%E2%80%9D%20%E2%80%94%20Vivir%20Claro%2C%20de%20Josh.%20L%C3%A9elo%20gratis%3A%20https%3A//vivirclaro.com/leer/acto-5-trascender.html">WhatsApp</a>
+        <a class="qbtn tg" target="_blank" rel="noopener" href="https://t.me/share/url?url=https%3A//vivirclaro.com/leer/acto-5-trascender.html&text=%E2%80%9CDise%C3%B1a%20los%20d%C3%ADas%2C%20y%20el%20arco%20se%20dise%C3%B1a%20solo.%E2%80%9D%20%E2%80%94%20Vivir%20Claro">Telegram</a>
+        <a class="qbtn x" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=%E2%80%9CDise%C3%B1a%20los%20d%C3%ADas%2C%20y%20el%20arco%20se%20dise%C3%B1a%20solo.%E2%80%9D%20%E2%80%94%20Vivir%20Claro%2C%20de%20Josh&url=https%3A//vivirclaro.com/leer/acto-5-trascender.html">X</a>
+        <button class="qbtn copy" type="button" data-copy="“Diseña los días, y el arco se diseña solo.” — Vivir Claro, de Josh. Léelo gratis: https://vivirclaro.com/leer/acto-5-trascender.html">Copiar</button>
+      </div>
+    </figure>
+    <figure class="qcard">
+      <blockquote>Es lo que queda cuando todo lo demás se borra: el legado que dejas en el corazón de quienes te cruzaron.</blockquote>
+      <div class="qshare">
+        <a class="qbtn wa" target="_blank" rel="noopener" href="https://wa.me/?text=%E2%80%9CEs%20lo%20que%20queda%20cuando%20todo%20lo%20dem%C3%A1s%20se%20borra%3A%20el%20legado%20que%20dejas%20en%20el%20coraz%C3%B3n%20de%20quienes%20te%20cruzaron.%E2%80%9D%20%E2%80%94%20Vivir%20Claro%2C%20de%20Josh.%20L%C3%A9elo%20gratis%3A%20https%3A//vivirclaro.com/leer/acto-5-trascender.html">WhatsApp</a>
+        <a class="qbtn tg" target="_blank" rel="noopener" href="https://t.me/share/url?url=https%3A//vivirclaro.com/leer/acto-5-trascender.html&text=%E2%80%9CEs%20lo%20que%20queda%20cuando%20todo%20lo%20dem%C3%A1s%20se%20borra%3A%20el%20legado%20que%20dejas%20en%20el%20coraz%C3%B3n%20de%20quienes%20te%20cruzaron.%E2%80%9D%20%E2%80%94%20Vivir%20Claro">Telegram</a>
+        <a class="qbtn x" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=%E2%80%9CEs%20lo%20que%20queda%20cuando%20todo%20lo%20dem%C3%A1s%20se%20borra%3A%20el%20legado%20que%20dejas%20en%20el%20coraz%C3%B3n%20de%20quienes%20te%20cruzaron.%E2%80%9D%20%E2%80%94%20Vivir%20Claro%2C%20de%20Josh&url=https%3A//vivirclaro.com/leer/acto-5-trascender.html">X</a>
+        <button class="qbtn copy" type="button" data-copy="“Es lo que queda cuando todo lo demás se borra: el legado que dejas en el corazón de quienes te cruzaron.” — Vivir Claro, de Josh. Léelo gratis: https://vivirclaro.com/leer/acto-5-trascender.html">Copiar</button>
+      </div>
+    </figure>
+</section>
 </main>
 <div class="rd-foot"><div class="rd-cta">
   <h3>¿Lo quieres contigo?</h3>
@@ -149,7 +191,9 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
   <a class="ghost" href="../descargas/Vivir_Claro.pdf" download>Descargar PDF</a>
 </div><div class="pager"><a href="acto-4-relacionarte.html"><span class="lbl">Anterior</span><span class="ttl">Acto IV — Relacionarte</span></a><a class="next" href="poemas.html"><span class="lbl">Siguiente</span><span class="ttl">Los poemas</span></a></div></div>
 <script>
-(function(){var p=document.getElementById('progress');function u(){var h=document.documentElement;var s=h.scrollTop||document.body.scrollTop;var max=(h.scrollHeight-h.clientHeight)||1;p.style.width=(s/max*100)+'%';}document.addEventListener('scroll',u,{passive:true});u();})();
+(function(){var p=document.getElementById('progress');function u(){var h=document.documentElement;var s=h.scrollTop||document.body.scrollTop;var max=(h.scrollHeight-h.clientHeight)||1;p.style.width=(s/max*100)+'%';}document.addEventListener('scroll',u,{passive:true});u();
+document.querySelectorAll('.qbtn.copy').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy');function done(){var o=b.textContent;b.textContent='¡Copiado!';b.classList.add('copied');setTimeout(function(){b.textContent=o;b.classList.remove('copied');},1800);}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(done);}else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);done();}});});})();
 </script>
 <script data-goatcounter="https://vivirclaro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
