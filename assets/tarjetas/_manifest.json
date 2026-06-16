@@ -5,7 +5,8 @@
   "quote": "La felicidad es el clima; la paz es el mar hondo bajo el oleaje, que permanece quieto aunque arriba haya tormenta.",
   "label": "ACTO I · VER CON CLARIDAD",
   "fmt": "historia",
-  "file": "a1-cita1-historia.png"
+  "file": "a1-cita1-historia.png",
+  "style": "v1"
  },
  {
   "acto": "a1",
@@ -13,7 +14,8 @@
   "quote": "La felicidad es el clima; la paz es el mar hondo bajo el oleaje, que permanece quieto aunque arriba haya tormenta.",
   "label": "ACTO I · VER CON CLARIDAD",
   "fmt": "feed",
-  "file": "a1-cita1-feed.png"
+  "file": "a1-cita1-feed.png",
+  "style": "v1"
  },
  {
   "acto": "a1",
@@ -21,7 +23,8 @@
   "quote": "La felicidad siempre será una visita: entra, ilumina la casa y se va. La casa que te sostiene, esa la levantas tú.",
   "label": "ACTO I · VER CON CLARIDAD",
   "fmt": "historia",
-  "file": "a1-cita2-historia.png"
+  "file": "a1-cita2-historia.png",
+  "style": "v2"
  },
  {
   "acto": "a1",
@@ -29,7 +32,8 @@
   "quote": "La felicidad siempre será una visita: entra, ilumina la casa y se va. La casa que te sostiene, esa la levantas tú.",
   "label": "ACTO I · VER CON CLARIDAD",
   "fmt": "feed",
-  "file": "a1-cita2-feed.png"
+  "file": "a1-cita2-feed.png",
+  "style": "v2"
  },
  {
   "acto": "a1",
@@ -37,7 +41,8 @@
   "quote": "El hecho de que todo se acabe no es solo una tristeza: es lo que le da significado a todo.",
   "label": "ACTO I · VER CON CLARIDAD",
   "fmt": "historia",
-  "file": "a1-cita3-historia.png"
+  "file": "a1-cita3-historia.png",
+  "style": "v1"
  },
  {
   "acto": "a1",
@@ -45,7 +50,8 @@
   "quote": "El hecho de que todo se acabe no es solo una tristeza: es lo que le da significado a todo.",
   "label": "ACTO I · VER CON CLARIDAD",
   "fmt": "feed",
-  "file": "a1-cita3-feed.png"
+  "file": "a1-cita3-feed.png",
+  "style": "v1"
  },
  {
   "acto": "a2",
@@ -53,7 +59,8 @@
   "quote": "Las emociones son datos, no órdenes.",
   "label": "ACTO II · PENSAR Y SENTIR BIEN",
   "fmt": "historia",
-  "file": "a2-cita1-historia.png"
+  "file": "a2-cita1-historia.png",
+  "style": "v3"
  },
  {
   "acto": "a2",
@@ -61,7 +68,8 @@
   "quote": "Las emociones son datos, no órdenes.",
   "label": "ACTO II · PENSAR Y SENTIR BIEN",
   "fmt": "feed",
-  "file": "a2-cita1-feed.png"
+  "file": "a2-cita1-feed.png",
+  "style": "v3"
  },
  {
   "acto": "a2",
@@ -69,7 +77,8 @@
   "quote": "Una vida sin emociones no es una vida sabia; es una vida apagada.",
   "label": "ACTO II · PENSAR Y SENTIR BIEN",
   "fmt": "historia",
-  "file": "a2-cita2-historia.png"
+  "file": "a2-cita2-historia.png",
+  "style": "v2"
  },
  {
   "acto": "a2",
@@ -77,7 +86,8 @@
   "quote": "Una vida sin emociones no es una vida sabia; es una vida apagada.",
   "label": "ACTO II · PENSAR Y SENTIR BIEN",
   "fmt": "feed",
-  "file": "a2-cita2-feed.png"
+  "file": "a2-cita2-feed.png",
+  "style": "v2"
  },
  {
   "acto": "a2",
@@ -85,7 +95,8 @@
   "quote": "Casi todo lo que de verdad importa vive en el gris.",
   "label": "ACTO II · PENSAR Y SENTIR BIEN",
   "fmt": "historia",
-  "file": "a2-cita3-historia.png"
+  "file": "a2-cita3-historia.png",
+  "style": "v3"
  },
  {
   "acto": "a2",
@@ -93,7 +104,8 @@
   "quote": "Casi todo lo que de verdad importa vive en el gris.",
   "label": "ACTO II · PENSAR Y SENTIR BIEN",
   "fmt": "feed",
-  "file": "a2-cita3-feed.png"
+  "file": "a2-cita3-feed.png",
+  "style": "v3"
  },
  {
   "acto": "a3",
@@ -101,7 +113,8 @@
   "quote": "No subes a la altura de tus sueños; bajas a la altura de tus hábitos.",
   "label": "ACTO III · ACTUAR CON CRITERIO",
   "fmt": "historia",
-  "file": "a3-cita1-historia.png"
+  "file": "a3-cita1-historia.png",
+  "style": "v4"
  },
  {
   "acto": "a3",
@@ -109,7 +122,8 @@
   "quote": "No subes a la altura de tus sueños; bajas a la altura de tus hábitos.",
   "label": "ACTO III · ACTUAR CON CRITERIO",
   "fmt": "feed",
-  "file": "a3-cita1-feed.png"
+  "file": "a3-cita1-feed.png",
+  "style": "v4"
  },
  {
   "acto": "a3",
@@ -117,7 +131,8 @@
   "quote": "Esa pequeña grieta entre lo que te pasa y lo que decides hacer, es donde vive toda tu libertad.",
   "label": "ACTO III · ACTUAR CON CRITERIO",
   "fmt": "historia",
-  "file": "a3-cita2-historia.png"
+  "file": "a3-cita2-historia.png",
+  "style": "v2"
  },
  {
   "acto": "a3",
@@ -125,7 +140,8 @@
   "quote": "Esa pequeña grieta entre lo que te pasa y lo que decides hacer, es donde vive toda tu libertad.",
   "label": "ACTO III · ACTUAR CON CRITERIO",
   "fmt": "feed",
-  "file": "a3-cita2-feed.png"
+  "file": "a3-cita2-feed.png",
+  "style": "v2"
  },
  {
   "acto": "a3",
@@ -133,7 +149,8 @@
   "quote": "Haz el bien como quien hace un regalo, no como quien pasa una factura.",
   "label": "ACTO III · ACTUAR CON CRITERIO",
   "fmt": "historia",
-  "file": "a3-cita3-historia.png"
+  "file": "a3-cita3-historia.png",
+  "style": "v5"
  },
  {
   "acto": "a3",
@@ -141,7 +158,8 @@
   "quote": "Haz el bien como quien hace un regalo, no como quien pasa una factura.",
   "label": "ACTO III · ACTUAR CON CRITERIO",
   "fmt": "feed",
-  "file": "a3-cita3-feed.png"
+  "file": "a3-cita3-feed.png",
+  "style": "v5"
  },
  {
   "acto": "a4",
@@ -149,7 +167,8 @@
   "quote": "El amor no es algo que sientes; es algo que haces, una y otra vez, sobre todo los días en que no lo sientes tanto.",
   "label": "ACTO IV · RELACIONARTE",
   "fmt": "historia",
-  "file": "a4-cita1-historia.png"
+  "file": "a4-cita1-historia.png",
+  "style": "v1"
  },
  {
   "acto": "a4",
@@ -157,7 +176,8 @@
   "quote": "El amor no es algo que sientes; es algo que haces, una y otra vez, sobre todo los días en que no lo sientes tanto.",
   "label": "ACTO IV · RELACIONARTE",
   "fmt": "feed",
-  "file": "a4-cita1-feed.png"
+  "file": "a4-cita1-feed.png",
+  "style": "v1"
  },
  {
   "acto": "a4",
@@ -165,7 +185,8 @@
   "quote": "La mayoría de la gente no escucha: espera su turno para hablar.",
   "label": "ACTO IV · RELACIONARTE",
   "fmt": "historia",
-  "file": "a4-cita2-historia.png"
+  "file": "a4-cita2-historia.png",
+  "style": "v4"
  },
  {
   "acto": "a4",
@@ -173,7 +194,8 @@
   "quote": "La mayoría de la gente no escucha: espera su turno para hablar.",
   "label": "ACTO IV · RELACIONARTE",
   "fmt": "feed",
-  "file": "a4-cita2-feed.png"
+  "file": "a4-cita2-feed.png",
+  "style": "v4"
  },
  {
   "acto": "a4",
@@ -181,7 +203,8 @@
   "quote": "Quedarse no siempre es amor; a veces es miedo disfrazado de lealtad.",
   "label": "ACTO IV · RELACIONARTE",
   "fmt": "historia",
-  "file": "a4-cita3-historia.png"
+  "file": "a4-cita3-historia.png",
+  "style": "v5"
  },
  {
   "acto": "a4",
@@ -189,7 +212,8 @@
   "quote": "Quedarse no siempre es amor; a veces es miedo disfrazado de lealtad.",
   "label": "ACTO IV · RELACIONARTE",
   "fmt": "feed",
-  "file": "a4-cita3-feed.png"
+  "file": "a4-cita3-feed.png",
+  "style": "v5"
  },
  {
   "acto": "a5",
@@ -197,7 +221,8 @@
   "quote": "No te retiras hacia la paz: la construyes mientras avanzas, o no la tendrás cuando llegues.",
   "label": "ACTO V · TRASCENDER",
   "fmt": "historia",
-  "file": "a5-cita1-historia.png"
+  "file": "a5-cita1-historia.png",
+  "style": "v5"
  },
  {
   "acto": "a5",
@@ -205,7 +230,8 @@
   "quote": "No te retiras hacia la paz: la construyes mientras avanzas, o no la tendrás cuando llegues.",
   "label": "ACTO V · TRASCENDER",
   "fmt": "feed",
-  "file": "a5-cita1-feed.png"
+  "file": "a5-cita1-feed.png",
+  "style": "v5"
  },
  {
   "acto": "a5",
@@ -213,7 +239,8 @@
   "quote": "Diseña los días, y el arco se diseña solo.",
   "label": "ACTO V · TRASCENDER",
   "fmt": "historia",
-  "file": "a5-cita2-historia.png"
+  "file": "a5-cita2-historia.png",
+  "style": "v3"
  },
  {
   "acto": "a5",
@@ -221,7 +248,8 @@
   "quote": "Diseña los días, y el arco se diseña solo.",
   "label": "ACTO V · TRASCENDER",
   "fmt": "feed",
-  "file": "a5-cita2-feed.png"
+  "file": "a5-cita2-feed.png",
+  "style": "v3"
  },
  {
   "acto": "a5",
@@ -229,7 +257,8 @@
   "quote": "Es lo que queda cuando todo lo demás se borra: el legado que dejas en el corazón de quienes te cruzaron.",
   "label": "ACTO V · TRASCENDER",
   "fmt": "historia",
-  "file": "a5-cita3-historia.png"
+  "file": "a5-cita3-historia.png",
+  "style": "v2"
  },
  {
   "acto": "a5",
@@ -237,6 +266,7 @@
   "quote": "Es lo que queda cuando todo lo demás se borra: el legado que dejas en el corazón de quienes te cruzaron.",
   "label": "ACTO V · TRASCENDER",
   "fmt": "feed",
-  "file": "a5-cita3-feed.png"
+  "file": "a5-cita3-feed.png",
+  "style": "v2"
  }
 ]
