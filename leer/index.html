@@ -61,6 +61,13 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
 .toc-ttl{font-family:'Baloo 2',sans-serif;font-weight:700;color:#15505A;font-size:1.15rem}
 .toc-desc{grid-column:1;color:#2E464E;font-family:'Poppins',sans-serif;font-size:.92rem}
 .toc-min{grid-column:2;grid-row:1;color:#1F6F78;font-family:'Poppins',sans-serif;font-weight:600;font-size:.85rem;white-space:nowrap}
+
+.resume-banner{display:flex;align-items:center;gap:14px;max-width:720px;margin:22px auto -8px;padding:16px 20px;background:#fff;border:1px solid rgba(31,111,120,.30);border-left:4px solid #F7CD6E;border-radius:16px;text-decoration:none;box-shadow:0 12px 30px -22px rgba(20,40,60,.5)}
+.resume-banner:hover{border-color:#1F6F78}
+.resume-banner .rb-ico{font-size:1.4rem;color:#1F6F78;line-height:1}
+.resume-banner .rb-txt{display:flex;flex-direction:column;font-family:'Poppins',sans-serif;color:#2E464E;font-size:.88rem}
+.resume-banner .rb-txt strong{color:#15505A;font-size:1rem}
+.resume-banner .rb-go{margin-left:auto;font-family:'Poppins',sans-serif;font-weight:600;color:#1F6F78;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -114,5 +121,16 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
     </a></li>
 </ul>
 <script data-goatcounter="https://vivirclaro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+/* Aviso 'Continua leyendo' en el indice */
+(function(){try{
+ var raw=localStorage.getItem('vc-last');if(!raw)return;
+ var d=JSON.parse(raw);if(!d||!d.slug||d.pct<2||d.pct>97)return;
+ var b=document.createElement('a');b.className='resume-banner';b.href=d.slug+'.html';
+ b.innerHTML='<span class="rb-ico">\u21bb</span><span class="rb-txt"><strong>Continúa leyendo</strong><span>'+(d.title||'tu lectura')+' \u00b7 vas por ~'+d.pct+'%</span></span><span class="rb-go">Retomar \u2192</span>';
+ var toc=document.querySelector('.toc');
+ if(toc){toc.parentNode.insertBefore(b,toc);}else{document.body.appendChild(b);}
+}catch(e){}})();
+</script>
 </body>
 </html>

@@ -60,7 +60,13 @@ hr{border:none;border-top:1px solid rgba(26,58,68,.15);margin:34px 0}
 .pager .lbl{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#2E464E;margin-bottom:3px}
 .pager .ttl{font-weight:600;color:#15505A;font-size:.95rem}
 .pager .next{text-align:right}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.resume-pill{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;transition:opacity .3s,transform .3s;z-index:50;display:flex;align-items:center;gap:4px;background:#15505A;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px;box-shadow:0 14px 34px -12px rgba(7,24,28,.6)}
+.resume-pill.show{opacity:1;transform:translate(-50%,0)}
+.resume-pill .rp-go{font-family:'Poppins',sans-serif;font-weight:600;font-size:.9rem;color:#1A3A44;background:#F7CD6E;border:none;border-radius:999px;padding:9px 16px;cursor:pointer}
+.resume-pill .rp-x{background:transparent;border:none;color:#F4EEE1;font-size:.95rem;cursor:pointer;padding:0 10px;opacity:.8}
+.resume-pill .rp-x:hover{opacity:1}
+</style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -196,5 +202,30 @@ document.querySelectorAll('.qbtn.copy').forEach(function(b){b.addEventListener('
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(done);}else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);done();}});});})();
 </script>
 <script data-goatcounter="https://vivirclaro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+/* Continuar leyendo: guarda y restaura la posicion por pagina */
+(function(){try{
+ var slug=(location.pathname.split('/').pop()||'').replace(/\.html$/,'');
+ if(!slug||slug==='index')return;
+ var key='vc-pos-'+slug, title=(document.title||'').split(' \u00b7 ')[0];
+ function maxY(){var h=document.documentElement;return (h.scrollHeight-h.clientHeight)||1;}
+ var t=null;
+ function save(){var y=window.scrollY||document.documentElement.scrollTop||0;var pct=Math.round(y/maxY()*100);
+   try{localStorage.setItem(key,String(y));localStorage.setItem('vc-last',JSON.stringify({slug:slug,title:title,pct:pct,ts:Date.now()}));}catch(e){}}
+ window.addEventListener('scroll',function(){if(t)return;t=setTimeout(function(){t=null;save();},400);},{passive:true});
+ window.addEventListener('beforeunload',save);
+ var y=parseInt(localStorage.getItem(key)||'0',10);
+ if(y>400 && (window.scrollY||0)<120 && (y/maxY()*100)<95){
+   var pill=document.createElement('div');pill.className='resume-pill';
+   pill.innerHTML='<button class="rp-go" type="button">Continuar donde lo dejaste \u2193</button><button class="rp-x" type="button" aria-label="Cerrar">\u2715</button>';
+   document.body.appendChild(pill);
+   requestAnimationFrame(function(){pill.classList.add('show');});
+   function hide(){pill.classList.remove('show');setTimeout(function(){if(pill.parentNode)pill.parentNode.removeChild(pill);},300);}
+   pill.querySelector('.rp-go').addEventListener('click',function(){window.scrollTo({top:y,behavior:'smooth'});hide();});
+   pill.querySelector('.rp-x').addEventListener('click',hide);
+   setTimeout(hide,12000);
+ }
+}catch(e){}})();
+</script>
 </body>
 </html>
